@@ -1,14 +1,10 @@
 {% extends "base.html" %}
 
-
-
-{% block heading %}
-
-Welcome!  <!--welcomes user-->
-    
-{% endblock %}
-
-
-{% block form %}
-
+{% block body %}
+<div class = "container resume-container">
+    <h3 class = "resume-header"> Resume </h3>
+    <div class = "row justify-content-center">
+        <embed src="{{ url_for('static', filename='CanaleBritniResume.pdf') }}" width="800px" height="1100px" />
+    </div>
+</div>
 {% endblock %} 
