@@ -60,8 +60,49 @@ a, li{
     flex-direction: column;
 }
 
-
-
 .body-container{
     margin: 30px;
 }
+
+.badge{
+    font-size: 16px !important;
+}
+
+.bg{
+    background-color: #f4f2f8 !important;
+    margin-top: 5px;
+}
+
+.skill-header{
+    margin-top: 20px;
+}
+
+.skills-header-div{
+    width: 80px;
+    display: inline-block;
+}
+
+.skills-page-header{
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.collapse{
+    margin:10px;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: 225px;
+    background-color: #8B8BE4;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .skills-header-div:hover .tooltiptext {
+    visibility: visible;
+  }

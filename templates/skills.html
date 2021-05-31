@@ -1,6 +1,9 @@
 {% extends "base.html" %}
 
+{% block header %}
+<script type="text/javascript" src="{{ url_for('static', filename='js/skills.js') }}"></script>
 
+{% endblock %}
 
 {% block heading %}
 
@@ -9,6 +12,230 @@ Welcome!  <!--welcomes user-->
 {% endblock %}
 
 
-{% block form %}
+{% block body %}
+<div class="container body-container">
+    <div class="row justify-content-sm-center align-items-center">
+        <div class = "col"> 
+            <div class="skills-header-div">
+                <h3 class = "skills-page-header"> Skills </h3>  
+                <span class="text-small tooltiptext">Click on a skill to learn more</span>
+            </div>
+            <h5 class = "skill-header"> Technical Skills </h5>
+            <a class="skill btn badge rounded-pill bg text-dark" data-bs-toggle="collapse" href="#collapseJava" role="button" aria-expanded="true" aria-controls="collapseJava" onclick="toggleCollapse('Java')">
+                <img class = "icon" src = "static/java_logo.png"> 
+                Java
+            </a>
+            <div class="collapse" id="collapseJava">
+                <div class="card card-body">
+                    <h6> Java </h6>
+                    I learned Java for the first time in AP Computer Science during my junior year of high school. Since then, I've worked with it in college during my freshman year of college in Object Oriented Programming & Data Structures. I also used Java during my Summer and Fall 2020 internships while working on the backend of my team's application.
+                </div>
+            </div>
+            <a class="skill btn badge rounded-pill bg text-dark" data-bs-toggle="collapse" href="#collapsePython" role="button" aria-expanded="true" aria-controls="collapsePython" onclick="toggleCollapse('Python')">
+                <img class = "icon" src = "static/python-logo.png"> 
+                Python
+            </a>
+            <div class="collapse" id="collapsePython">
+                <div class="card card-body">
+                    <h6> Python </h6>
+                    I first learned Python in my senior year of high school during a Software Development course. Since then, I've used it for personal web development projects, including this one.
+                </div>
+            </div>
+            <a class="skill btn badge rounded-pill bg text-dark" data-bs-toggle="collapse" href="#collapseOcaml" role="button" aria-expanded="true" aria-controls="collapseOcaml" onclick="toggleCollapse('Ocaml')">
+                <img class = "icon" src= "static/ocaml-logo.png"> 
+                OCaml
+            </a>
+            <div class="collapse" id="collapseOcaml">
+                <div class="card card-body">
+                    <h6> OCaml </h6>
+                    I learned OCaml during my sophomore year of college during Data Structures and Functional Programming. 
+                </div>
+            </div>
+            <a class="skill btn badge rounded-pill bg text-dark" data-bs-toggle="collapse" href="#collapseHTML" role="button" aria-expanded="true" aria-controls="collapseHTML" onclick="toggleCollapse('HTML')">
+                <img class = "icon" src= "static/html-logo.png"> 
+                HTML
+            </a>
+            <div class="collapse" id="collapseHTML">
+                <div class="card card-body">
+                    <h6> HTML </h6>
+                    I first learned HTML in my senior year of high school during a Software Development course. Since then, I've used it during my Summer and Fall 2020 internships for the front-end of my team's application.
+                </div>
+            </div>
+            <a class="skill btn badge rounded-pill bg text-dark" data-bs-toggle="collapse" href="#collapseCSS" role="button" aria-expanded="true" aria-controls="collapseCSS" onclick="toggleCollapse('CSS')">
+                <img class = "icon" src= "static/css-logo.png"> 
+                CSS
+            </a>
+            <div class="collapse" id="collapseCSS">
+                <div class="card card-body">
+                    <h6> CSS </h6>
+                    I first learned CSS in my senior year of high school during a Software Development course. Since then, I've used it during my Summer and Fall 2020 internships for the front-end of my team's application.
+                </div>
+            </div>
+            <a class="skill btn badge rounded-pill bg text-dark" data-bs-toggle="collapse" href="#collapseJS" role="button" aria-expanded="true" aria-controls="collapseJS" onclick="toggleCollapse('JS')">
+                <img class = "icon" src= "static/JavaScript-logo.png"> 
+                JavaScript
+            </a>
+            <div class="collapse" id="collapseJS">
+                <div class="card card-body">
+                    <h6> JavaScript </h6>
+                    I was first introduced to JavaScript during my senior year of highschool in a Software Development course. However, I learned JavaScript more in-depth during my Summer 2020 internship, during which I used it on the front-end of my team's application.
+                </div>
+            </div>
+            <a class="skill btn badge rounded-pill bg text-dark" data-bs-toggle="collapse" href="#collapseTS" role="button" aria-expanded="true" aria-controls="collapseTS" onclick="toggleCollapse('TS')">
+                <img class = "icon" src= "static/ts-logo.png"> 
+                TypeScript
+            </a>
+            <div class="collapse" id="collapseTS">
+                <div class="card card-body">
+                    <h6> TypeScript </h6>
+                    I was introduced to TypeScript for the first time during my Summer 2020 internship, where I used it on the front-end of my team's application.
+                </div>
+            </div>
+            <a class="skill btn badge rounded-pill bg text-dark" data-bs-toggle="collapse" href="#collapseBootstrap" role="button" aria-expanded="true" aria-controls="collapseBootstrap" onclick="toggleCollapse('Bootstrap')">
+                <img class = "icon" src= "static/bootstrap-logo.svg"> 
+                Bootstrap
+            </a>
+            <div class="collapse" id="collapseBootstrap">
+                <div class="card card-body">
+                    <h6> Bootstrap </h6>
+                    I first learned Bootstrap in my senior year of high school during a Software Development course. Since then, I've used it for personal web development projects, including this one.
+                </div>
+            </div>
+            <a class="skill btn badge rounded-pill bg text-dark" data-bs-toggle="collapse" href="#collapseAngular" role="button" aria-expanded="true" aria-controls="collapseAngular" onclick="toggleCollapse('Angular')">
+                <img class = "icon" src= "static/angular-logo.png"> 
+                AngularJS
+            </a>
+            <div class="collapse" id="collapseAngular">
+                <div class="card card-body">
+                    <h6> AngularJS </h6>
+                    I was introduced to AngularJS for the first time during my Summer 2020 internship, where I used it on the front-end of my team's application.
+                </div>
+            </div>
+            <a class="skill btn badge rounded-pill bg text-dark" data-bs-toggle="collapse" href="#collapseSQL" role="button" aria-expanded="true" aria-controls="collapseSQL" onclick="toggleCollapse('SQL')">
+                SQL
+            </a>
+            <div class="collapse" id="collapseSQL">
+                <div class="card card-body">
+                    <h6> SQL </h6>
+                    I first learned SQL in my senior year of high school during a Software Development course. Since then, I've used it during my Summer and Fall 2020 internships, where I used it on the backend of the application I worked on.
+                </div>
+            </div>
+            <a class="skill btn badge rounded-pill bg text-dark" data-bs-toggle="collapse" href="#collapseFlask" role="button" aria-expanded="true" aria-controls="collapseFlask" onclick="toggleCollapse('Flask')">
+                <img class = "icon" src= "static/flask-logo.png"> 
+                Flask
+            </a>
+            <div class="collapse" id="collapseFlask">
+                <div class="card card-body">
+                    <h6> Flask </h6>
+                    I first learned Flask in my senior year of high school during a Software Development course. Since then, I've used it for personal web development projects, including this one.
+                </div>
+            </div>
+            <a class="skill btn badge rounded-pill bg text-dark" data-bs-toggle="collapse" href="#collapseMongo" role="button" aria-expanded="true" aria-controls="collapseMongo" onclick="toggleCollapse('Mongo')">
+                <img class = "icon" src= "static/mongo-db-logo.png"> 
+                MongoDB
+            </a>
+            <div class="collapse" id="collapseMongo">
+                <div class="card card-body">
+                    <h6> MongoDB </h6>
+                    I was introduced to MongoDB in my senior year of high school during a Software Development course.
+                </div>
+            </div>
+            <a class="skill btn badge rounded-pill bg text-dark" data-bs-toggle="collapse" href="#collapseSpring" role="button" aria-expanded="true" aria-controls="collapseSpring" onclick="toggleCollapse('Spring')">
+                <img class = "icon" src= "static/spring-logo.ico"> 
+                Spring
+            </a>
+            <div class="collapse" id="collapseSpring">
+                <div class="card card-body">
+                    <h6> Spring </h6>
+                    I was introduced to Spring for the first time during my Summer 2020 internship, where I used it on the backend of my team's application.
+
+                </div>
+            </div>
+            <a class="skill btn badge rounded-pill bg text-dark" data-bs-toggle="collapse" href="#collapseFoundation" role="button" aria-expanded="true" aria-controls="collapseFoundation" onclick="toggleCollapse('Foundation')">
+                Foundation
+            </a>
+            <div class="collapse" id="collapseFoundation">
+                <div class="card card-body">
+                    <h6> I was introduced to Foundation in my senior year of high school during a Software Development course. </h6>
+                </div>
+            </div>
+            <a class="skill btn badge rounded-pill bg text-dark" data-bs-toggle="collapse" href="#collapseCode" role="button" aria-expanded="true" aria-controls="collapseCode" onclick="toggleCollapse('Code')">
+                <img class = "icon" src= "static/vscode-logo.png"> 
+                VSCode
+            </a>
+            <div class="collapse" id="collapseCode">
+                <div class="card card-body">
+                    <h6> VSCode </h6>
+                    I used VSCode for the first time during my Summer 2020 internship. Since then I've used it for all of my personal projects and for my Data Structures and Functional Programming class.
+                </div>
+            </div>
+            <a class="skill btn badge rounded-pill bg text-dark" data-bs-toggle="collapse" href="#collapseEclipse" role="button" aria-expanded="true" aria-controls="collapseEclipse" onclick="toggleCollapse('Eclipse')">
+                <img class = "icon" src= "static/eclipse-logo.png"> 
+                Eclipse
+            </a>
+            <div class="collapse" id="collapseEclipse">
+                <div class="card card-body">
+                    <h6> Eclipse </h6>
+                    I used Eclipse during my freshman year of college during my Object-Oriented Programming & Data Structures class.
+                </div>
+            </div>
+            <a class="skill btn badge rounded-pill bg text-dark" data-bs-toggle="collapse" href="#collapseEmacs" role="button" aria-expanded="true" aria-controls="collapseEmacs" onclick="toggleCollapse('Emacs')">
+                <img class = "icon" src= "static/emacs-logo.png"> 
+                Emacs
+            </a>
+            <div class="collapse" id="collapseEmacs">
+                <div class="card card-body">
+                    <h6> Emacs </h6>
+                    I used Emacs during my junior year of highschool during my AP Computer Science class.
+                </div>
+            </div>
+            <a class="skill btn badge rounded-pill bg text-dark" data-bs-toggle="collapse" href="#collapseDO" role="button" aria-expanded="true" aria-controls="collapseDO" onclick="toggleCollapse('DO')">
+                <img class = "icon" src= "static/digital-ocean-logo.png"> 
+                Digital Ocean
+            </a>
+            <div class="collapse" id="collapseDO">
+                <div class="card card-body">
+                    <h6> Digital Ocean </h6>
+                    I used Digital Ocean in my senior year of high school during a Software Development course to deploy our projects. Since then, I've used it for personal web development projects, including this one.
+                </div>
+            </div>
+            <a class="skill btn badge rounded-pill bg text-dark" data-bs-toggle="collapse" href="#collapseHeroku" role="button" aria-expanded="true" aria-controls="collapseHeroku" onclick="toggleCollapse('Heroku')">
+                <img class = "icon" src= "static/heroku-logo.png"> 
+                Heroku
+            </a>
+            <div class="collapse" id="collapseHeroku">
+                <div class="card card-body">
+                    <h6> Heroku </h6>
+                    I used Digital Ocean in the summer after my senior year of high school during a program called FinTech Focus to deploy our projects. Since then, I've used it for personal web development projects.
+                </div>
+            </div>
+            <h5 class = "skill-header"> Soft Skills </h5>
+            <a class="skill btn badge rounded-pill bg text-dark" data-bs-toggle="collapse" href="#collapseCommunication" role="button" aria-expanded="true" aria-controls="collapseCommunication" onclick="toggleCollapse('Communication')">
+                Comminucation
+            </a>
+            <div class="collapse" id="collapseCommunication">
+                <div class="card card-body">
+                    <h6> Communication </h6>
+                </div>
+            </div>
+            <a class="skill btn badge rounded-pill bg text-dark" data-bs-toggle="collapse" href="#collapseLeader" role="button" aria-expanded="true" aria-controls="collapseLeader" onclick="toggleCollapse('Leader')">
+                Leadership
+            </a>
+            <div class="collapse" id="collapseLeader">
+                <div class="card card-body">
+                    <h6> Leadership </h6>
+                </div>
+            </div>
+            <a class="skill btn badge rounded-pill bg text-dark" data-bs-toggle="collapse" href="#collapseAdapt" role="button" aria-expanded="true" aria-controls="collapseAdapt" onclick="toggleCollapse('Adapt')">
+                Adaptation
+            </a>
+            <div class="collapse" id="collapseAdapt">
+                <div class="card card-body">
+                    <h6> Adaptation </h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 {% endblock %} 
