@@ -34,7 +34,7 @@ a, li{
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out
 }
 
-.footer-link :hover{
+.footer-link:hover{
     color: rgba(0,0,0,.55) !important;
 }
 
@@ -113,4 +113,64 @@ a, li{
 
 .resume-header{
     margin-bottom:20px;
+}
+
+.project-card{
+    /* margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 25px */
+}
+
+.project-card-wrapper{
+    padding: 5px;
+    margin-top:20px
+}
+
+.project-picture{
+    width: 100%;
+    height: auto;
+    border: 1px solid rgba(0,0,0,.125)
+}
+
+
+.education-col{
+    width: 317px !important;
+    background-color: rgba(0,0,0,.125);
+    border: 1px solid rgba(0,0,0,.125)
+}
+
+.education-picture{
+    width: 315px;
+    height: 180px;
+}
+
+ @media screen and (max-width: 800px) {
+
+    .education-col {
+        width: 100% !important;
+        border: 1px solid rgba(0,0,0,.125)
+    }
+
+    .project-picture{
+        width: 100%;
+        height: auto;
+    }
+
+    .education-picture{
+        width: 100%;
+        height: auto;
+    }
+ }
+
+.project-link{
+    color: #7B7BE0;
+}
+
+.project-link:hover{
+    color: #4949D4;
+}
+
+.project-date{
+    color: rgba(0,0,0,.55);
+    font-style: italic;
 }
