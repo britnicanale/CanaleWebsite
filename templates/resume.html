@@ -2,9 +2,19 @@
 
 {% block body %}
 <div class = "container resume-container">
-    <h3 class = "resume-header"> Resume </h3>
+    <div class = "resume-header-div">
+        <h3 class = "resume-header"> 
+            Resume 
+            <a class = "resume-download" href="static/CanaleBritniResume.pdf" download> 
+                <div class="download-tooltip tooltiptext">Click to download</div>
+                <i class = "fas fa-download"></i>
+            </a>
+        </h3> 
+    </div>
     <div class = "row justify-content-center">
-        <embed src="{{ url_for('static', filename='CanaleBritniResume.pdf') }}" width="800px" height="1100px" />
+        <div class = "resume-div col">
+            <img class = "resume" src="static/CanaleBritniResume.jpg"/>
+        </div>
     </div>
 </div>
 {% endblock %} 
