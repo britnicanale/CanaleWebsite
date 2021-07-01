@@ -28,6 +28,9 @@ def education():
 def resume():
     return render_template("resume.html")
 
+@app.route("/feedback", methods = ["GET", "POST"])
+def feedback():
+    return render_template("feedback.html")
 
 
 if __name__ == "__main__":

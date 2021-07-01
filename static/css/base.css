@@ -19,6 +19,15 @@ nav{
     background-color: #CDCDF3;
 }
 
+.feedback-link{
+    float:right !important;
+}
+
+.feedbackButton{
+    width:100px !important;
+    margin:10px;
+}
+
 footer{
     width: 100%;
     padding: 30px;

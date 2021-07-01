@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %} BRITNI CANALE | FEEDBACK {% endblock %}
+
+{% block body %}
+<div class = "col"> 
+    <div class="">
+        <h3 class = "projects-page-header"> Leave Feedback </h3>  
+        <form class="row" action="mailto:britnicanale@gmail.com" method="POST" enctype="multipart/form-data" name="FeedbackForm">
+            <div class = "col-sm-6">
+                <label for="feedbackName" class = "form-label">Name</label>
+                <input type="text" class = "form-control" id="feedbackName" placeholder="Enter name">
+            </div>
+            <div class = "col-sm-6">
+                <label for="feedbackEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="feedbackEmail" placeholder="Enter email">
+            </div>
+            <div class = "col-xs-12">
+                <label for="feedbackText" class="form-label">Feedback</label>
+                <textarea class="form-control" id="feedbackText" placeholder="Enter feedback" rows="4" required></textarea>
+            </div>
+            <button class="btn feedbackButton" type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+{% endblock %}
