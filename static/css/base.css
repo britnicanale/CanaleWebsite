@@ -97,11 +97,13 @@ a, li{
 }
 
 .headshot-header{
-    color:white;
+    color:black;
+    font-weight: 300 !important
 }
 
-.headshot-card{
-
+.headshot-subheader{
+    color:white;
+    font-weight: 300 !important
 }
 
 .body-container{
