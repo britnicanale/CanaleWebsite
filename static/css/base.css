@@ -64,6 +64,25 @@ a, li{
     border-radius: 50%;
 }
 
+.headshot-card{
+    width: 323px;
+}
+
+.about-me-card{
+    margin-top: 10px;
+    width: 323px;
+    padding: 10px;
+}
+
+.about-me-icon{
+    font-size: 48px;
+}
+
+.icon-col{
+    width: 60px !important;
+    margin-right: 10px;
+}
+
 .headshot-col{
     justify-content: center !important;
     display: flex;
@@ -72,11 +91,11 @@ a, li{
     padding-top: 10px;
     padding-bottom: 10px;
 }
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
     .headshot-col{
         width: 100% !important;
     }
-}
+} */
 
 @media screen and (min-width: 800px) {
     .headshot-col{
@@ -86,6 +105,14 @@ a, li{
 
 .about-me{
     padding: 10px;
+}
+
+.about-me-header{
+    margin-bottom: 40px;
+}
+
+.about-me-row{
+    margin: 40px;
 }
 
 .about-me-text{
@@ -106,6 +133,10 @@ a, li{
     font-weight: 300 !important
 }
 
+.about-me-btn{
+    font-weight: 300 !important;
+}
+
 .body-container{
     margin: 30px;
 }
@@ -119,6 +150,10 @@ a, li{
 .bg{
     background-color: #DEDEF7 !important;
     margin-top: 5px;
+}
+
+.bg:hover{
+    background-color: #BDBDEF !important;
 }
 
 .skill-header{
