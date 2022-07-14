@@ -1,6 +1,4 @@
 body{
-    /* display:flex;
-    flex-direction: column; */
     height: 100%;
     background-color: #EEEEFB !important;
     padding-top: 4.5rem;
@@ -91,11 +89,6 @@ a, li{
     padding-top: 10px;
     padding-bottom: 10px;
 }
-/* @media screen and (max-width: 800px) {
-    .headshot-col{
-        width: 100% !important;
-    }
-} */
 
 @media screen and (min-width: 800px) {
     .headshot-col{
@@ -229,12 +222,6 @@ a, li{
     border: none !important;
 }
 
-.project-card{
-    /* margin-right: 5px;
-    margin-left: 5px;
-    margin-top: 25px */
-}
-
 .project-card-wrapper{
     padding: 5px;
     margin-top:20px
@@ -244,17 +231,6 @@ a, li{
     width: 100%;
     height: auto;
     border: 1px solid rgba(0,0,0,.125)
-}
-
-
-.education-col{
-    /* width: 317px !important;
-    background-color: rgba(0,0,0,.125);
-    border: 1px solid rgba(0,0,0,.125) */
-}
-
-.education-card{
-
 }
 
 .education-date{
