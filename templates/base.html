@@ -16,72 +16,43 @@
   <title>{% block title %} {% endblock %}</title>
 
   <body>
-    <div class = "wrap">
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container-fluid">
-          <a class="text-uppercase navbar-brand" href="/">Britni Canale</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a id="nav-link-experience" onclick="toggleActive('experience')" class="text-uppercase nav-link" href="/experience">Experience</a>
-              <a id="nav-link-skills" onclick="toggleActive('skills')" class="text-uppercase nav-link" href="/skills">Skills</a>
-              <a id="nav-link-projects" onclick="toggleActive('projects')" class="text-uppercase nav-link" href="/projects">Projects</a>
-              <a id="nav-link-education" onclick="toggleActive('education')" class="text-uppercase nav-link" href="/education">Education</a>
-              <a id="nav-link-resume" onclick="toggleActive('resume')" class="text-uppercase nav-link" href="/resume">Resume</a>
+    <div class = "row wrap">
+      <div class = "fixed">
+        <nav class="side-bar nav flex-column vh-100">
+          <div class="container-fluid">
+            <h2 class="nav-link"><a href="/">Britni Canale</a></h2>    
+              <div class="nav flex-column">
+                <a id="nav-link-experience" class=" nav-link" href="/experience">Experience</a>
+                <a id="nav-link-skills"  class="nav-link" href="/skills">Skills</a>
+                <a id="nav-link-projects"  class="nav-link" href="/projects">Projects</a>
+                <a id="nav-link-education" class="nav-link" href="/education">Education</a>
+                <a id="nav-link-resume"class="nav-link" href="/resume">Resume</a>
+              </div>
+            <footer class="justify-content-end">
+              <a class="nav-link">britnicanale@gmail.com</a>
+            </footer>
+          </div>
+        </nav>
+        <!-- <footer class="position-fixed">
+          <div class="container-fluid">
+          
+          </div>
+        </footer> -->
+      </div>
+
+      <div class ="main">
+        <div class="container body-container">
+
+        {% block errors %} {% endblock %} 
+          <div class="row justify-content-sm-center align-items-center">
+            <div class="col-xl-8">
+              {% block body %}{% endblock %}
             </div>
           </div>
         </div>
-      </nav>
-
-      {% block errors %} {% endblock %} 
-  
-      <div class="container body-container">
-        <div class="row justify-content-sm-center align-items-center">
-          <div class="col-xl-8">
-            {% block body %}{% endblock %}
-          </div>
-        </div>
-      </div>
+      </div>   
 
     </div>
-    <footer class = "footer"> 
-      <div class = "row">
-        <div class = "navbar-nav footer-col first-footer-col">
-          <small>
-            <a class="nav-link footer-link" href="mailto:britnicanale@gmail.com">
-              <i class = "fas fa-envelope"></i> 
-              britnicanale@gmail.com
-            </a>
-          </small>
-          <small>
-            <a class="nav-link footer-link" href="tel:9176752076">
-              <i class = "fas fa-phone"></i> 
-              1(917)675-2076
-            </a>
-          </small>
-        </div>
-        <div class = "col-lg-3 col-xs-6 col-sm-5 navbar-nav footer-col">
-          <small>
-            <a class="nav-link footer-link" href="https://github.com/britnicanale">
-              <img class = "icon" src = "static/GitHub-Mark-32px.png"> 
-              Github
-            </a>
-          </small>
-          <small>
-            <a class="nav-link footer-link" href="https://linkedin.com/in/britni-canale">
-              <img class = "icon" src = "static/LI-In-Bug.png"> 
-              LinkedIn
-            </a>
-          </small>
-        </div>
-      </div>
-      
-
-        </div>
-    </footer>
-
   </body>
 
 </html>
