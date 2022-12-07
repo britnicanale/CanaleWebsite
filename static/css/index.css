@@ -35,11 +35,12 @@ body{
     display:flex;
     flex-direction: column;
     height: 100%;
-    background-color: #FFFFFF !important;
 }
 
-#main {
+body #main {
     padding: 50px;
+    background-color: #f5f5f7;
+    min-height: 100vh;
 }
 
 .headshot {
@@ -86,4 +87,37 @@ body{
 .resume-div{
     padding: 20px;
     background-color: #CDCDF3
+}
+
+#main .card {
+    border: none;
+    border-radius: 18px;
+    padding: 30px;
+    margin: 10px;
+    box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+}
+
+.card h5 {
+    font-weight: 600;
+}
+
+.btn-group-sm {
+    background-color: black;
+    width: max-content;
+}
+
+label.btn {
+    color: white;
+    margin: 3px;
+}
+
+label.btn:hover,
+label.btn:focus {
+    color: gray;
+    outline: none;
+}
+
+label.btn:active, .btn-check:checked+.btn {
+    color: black;
+    background-color: white;
 }

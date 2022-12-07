@@ -30,7 +30,6 @@ const contacts = [
     }
 ]
 
-
 function createSidebar() {
     currentSection = window.location.href.split('/').pop();
 
@@ -102,6 +101,19 @@ function initWebsite() {
 
     main = document.getElementById('main');
     main.style['margin-left'] = sideBar.offsetWidth;
+}
+
+function showExperience(e) {
+    type = e.target.id;
+    experiences = document.getElementsByClassName('all');
+    for (let experience of experiences) {
+        if (experience.classList.contains(type)) {
+            experience.style.display = 'block';
+        }
+        else{
+            experience.style.display = 'none';
+        }
+    }
 }
 
 initWebsite();

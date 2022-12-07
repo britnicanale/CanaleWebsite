@@ -4,17 +4,17 @@
 
 {%block body%}
 <h3> Experience </h3> 
-<div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
-    <input type="radio" class="btn-check" name="btnradio" id="all" autocomplete="off" onClick="showAllExperience()" checked>
-    <label class="btn btn-outline-secondary" for="all" onClick="showAllExperience()">Show All Experience</label>
+<div class="btn-group-sm rounded-pill mx-auto" role="group" aria-label="Basic radio toggle button group">
+    <input type="radio" class="btn-check" name="btnradio" id="all" autocomplete="off" onclick="showExperience(event)" checked>
+    <label class="btn rounded-pill" for="all" onclick="showExperience(event)">All Experience</label>
     
-    <input type="radio" class="btn-check" name="btnradio" id="programming" autocomplete="off" onClick="showProgrammingExperience()">
-    <label class="btn btn-outline-secondary" for="programming" onClick="showProgrammingExperience()">Show Programming Experience</label>
+    <input type="radio" class="btn-check" name="btnradio" id="programming" autocomplete="off" onclick="showExperience(event)">
+    <label class="btn rounded-pill" for="programming" onclick="showExperience(event)">Programming Experience</label>
     
-    <input type="radio" class="btn-check" name="btnradio" id="general" autocomplete="off" onClick="showGeneralExperience()"> 
-    <label class="btn btn-outline-secondary" for="general" onClick="showGeneralExperience()">Show General Experience</label>
+    <input type="radio" class="btn-check" name="btnradio" id="general" autocomplete="off" onclick="showExperience(event)"> 
+    <label class="btn rounded-pill round" for="general" onclick="showExperience(event)">General Experience</label>
 </div>
-<div class = "shadow card experience-card all programming">
+<div class = "card experience-card all programming">
     <div class = "row g-0">
         <div class = "col-sm-6 experience-col">
             <h5 class="fst-bold experience-text">Software Engineering Intern, <span class="company">Google</span></h5>
@@ -42,7 +42,7 @@
         </div>
     </div>
 </div>
-<div class = "shadow card experience-card all general">
+<div class = "card experience-card all general">
     <div class = "row g-0">
         <div class = "col-sm-6 experience-col">
             <h5 class="fst-bold experience-text">Student Coordinator, <span class="company">Cornell Intramural Sports</span></h5>
@@ -61,7 +61,7 @@
         </div>
     </div>
 </div>
-<div class = "shadow card experience-card all programming">
+<div class = "card experience-card all programming">
     <div class = "row g-0">
         <div class = "col-sm-6 experience-col">
             <h5 class="fst-bold experience-text">Technology Summer Analyst, <span class="company">Morgan Stanley</span></h5>
@@ -86,7 +86,7 @@
         </div>
     </div>
 </div>
-<div class = "shadow card experience-card all general">
+<div class = "card experience-card all general">
     <div class = "row g-0">
         <div class = "col-sm-6 experience-col">
             <h5 class="fst-bold experience-text">Supervisor, <span class="company">Cornell Intramural Sports</span></h5>
@@ -108,7 +108,7 @@
         </div>
     </div>
 </div>
-<div class = "shadow card experience-card all general">
+<div class = "card experience-card all general">
     <div class = "row g-0">
         <div class = "col-sm-6 experience-col">
             <h5 class="fst-bold experience-text">Fitness Monitor, <span class="company">Cornell Fitness Centers</span></h5>
@@ -127,7 +127,7 @@
         </div>
     </div>
 </div>
-<div class = "shadow card experience-card all general">
+<div class = "card experience-card all general">
     <div class = "row g-0">
         <div class = "col-sm-6 experience-col">
             <h5 class="fst-bold experience-text">Tutor, <span class="company">Cornell Engineering Learning Initiatives</span></h5>
@@ -146,7 +146,7 @@
         </div>
     </div>
 </div>
-<div class = "shadow card experience-card all programming">
+<div class = "card experience-card all programming">
     <div class = "row g-0">
         <div class = "col-sm-6 experience-col">
             <h5 class="fst-bold experience-text">Fall Technology Intern, <span class="company">Morgan Stanley</span></h5>
@@ -168,7 +168,7 @@
         </div>
     </div>
 </div>
-<div class = "shadow card experience-card all programming">
+<div class = "card experience-card all programming">
     <div class = "row g-0">
         <div class = "col-sm-6 experience-col">
             <h5 class="fst-bold experience-text">Technology Summer Analyst, <span class="company">Morgan Stanley</span></h5>
