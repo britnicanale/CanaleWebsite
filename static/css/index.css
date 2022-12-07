@@ -3,17 +3,26 @@ nav .nav-link {
     text-transform: capitalize;
 }
 
-nav .nav-link:hover {
+nav .nav-link:focus,
+nav .nav-link:hover{
+    outline: none;
     color: rgb(255, 255, 255, 0.7);
+}
+
+footer .nav-link:focus,
+footer .nav-link:hover{
+    outline: none;
+    color: rgb(255, 255, 255, 0.7);
+}
+
+.active {
+    font-weight: 700;
+    background-color: rgb(255, 255, 255, 0.2);
 }
 
 footer .nav-link {
     color: #FFFFFF;
     font-size: 0.8rem;
-}
-
-footer .nav-link:hover {
-    color: rgb(255, 255, 255, 0.7);
 }
 
 .icon {

@@ -32,6 +32,8 @@ const contacts = [
 
 
 function createSidebar() {
+    currentSection = window.location.href.split('/').pop();
+
     sideBar = document.getElementById('sidebar');
     sideBar.style['background-color'] = '#000000';
     sideBar.style['position'] = 'fixed';
@@ -55,6 +57,9 @@ function createSidebar() {
     sections.forEach((section) => {
         let link =  document.createElement('a');
         link.innerHTML = section;
+        if (section == currentSection) {
+            link.classList.add('active');
+        }
         link.href = '/' + section;
         link.classList.add('nav-link');
         navLinks[section] = link;
@@ -90,22 +95,13 @@ function createSidebar() {
 
 }
 
-
-
 function initWebsite() {
     content = document.getElementById('content');
-    // content.classList.add('row');
-    // console.log(document.body)
-    // document.body.appendChild(content);
 
     createSidebar();
 
     main = document.getElementById('main');
     main.style['margin-left'] = sideBar.offsetWidth;
-}
-
-function toggleActive(section) {
-
 }
 
 initWebsite();
