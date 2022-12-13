@@ -135,3 +135,20 @@ label.btn:active, .btn-check:checked+.btn {
 .resume-download {
     margin-bottom: 10px;
 }
+
+.company {
+    font-weight: 800;
+}
+
+.courses {
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.education-date {
+    font-style: italic;
+}
+
+.project-date {
+    font-weight: 600;
+}
