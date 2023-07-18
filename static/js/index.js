@@ -101,6 +101,11 @@ function initWebsite() {
 
     main = document.getElementById('main');
     main.style['margin-left'] = sideBar.offsetWidth;
+    main.classList.add('row');
+    main.classList.add('justify-content-center')
+
+    let inner = document.getElementById('inner');
+    inner.style['max-width'] = '800px';
 }
 
 function showExperience(e) {

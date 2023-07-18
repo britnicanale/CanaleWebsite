@@ -1,0 +1,174 @@
+{
+    "education": [
+        {
+            "school": "Cornell University",
+            "college": "College of Engineering",
+            "degree": "Bachelors of Science",
+            "startMonth": 8,
+            "startYear": 2019,
+            "endMonth": 5,
+            "endYear": 2023,
+            "major": "Computer Science",
+            "location": "Ithaca, NY",
+            "gpa": 3.5,
+            "relevantCourses": [
+                "Object Oriented Programming & Data Structures",
+                "Discrete Strucures - Honors",
+                "The Computing Technology Inside Your Smartphone",
+                "Data Structures & Functional Programming",
+                "Digital Logic & Computer Organizaiton",
+                "Introduction to Analysis of Algorithms",
+                "Embedded Systems",
+                "Introduction to Computer Vision",
+                "Introduction to Machine Learning",
+                "Optimization", 
+                "Communicating Digital Identity",
+                "Practicum in Artificial Intelligence",
+                "Operating Systems",
+                "Introduction to Cryptography", 
+                "Human Perception: Application to Computer Graphics and Visual Display"
+            ],
+            "type": "Undergraduate"
+        }
+    ],
+    "work": [
+        {
+            "company": "Cornell University Intramural Sports",
+            "position": "Student Official",
+            "startMonth": 12,
+            "startYear": 2019,
+            "endMonth": 3,
+            "endYear": 2020,
+            "location": "Ithaca, NY",
+            "bulletPoints": [
+                "Officiated students playing intramural basketball."
+            ],
+            "logo": "",
+            "type": "general"
+        },
+        {
+            "company": "Morgan Stanley",
+            "position": "Technology Summer Analyst",
+            "startMonth": 6,
+            "startYear": 2020,
+            "endMonth": 8,
+            "endYear": 2020,
+            "location": "New York, NY",
+            "bulletPoints": [
+                "Worked on an Agile software development team on an application with over 400 users in over 10 countries.",
+                "Participated in daily scrum-style standup and planning and implementation discussions with product owner.",
+                "Tracked progress with Jira.",
+                "Created a read-only tech role for the production environment, allowing tech users ot access it."
+            ],
+            "logo": "",
+            "type": "programming"
+        },
+        {
+            "company": "Morgan Stanley",
+            "position": "Fall Technology Intern",
+            "startMonth": 9,
+            "startYear": 2020,
+            "endMonth": 12,
+            "endYear": 2020,
+            "location": "New York, NY",
+            "bulletPoints": [
+                "Rejoined same team from Summer 2020.",
+                "Fixed bugs and added updates to the application, including a daily email update for users including application data."
+            ],
+            "logo": "",
+            "type": "programming"
+        },
+        {
+            "company": "Morgan Stanley",
+            "position": "Technology Summer Analyst",
+            "startMonth": 6,
+            "startYear": 2021,
+            "endMonth": 8,
+            "endYear": 2021,
+            "location": "New York, NY",
+            "bulletPoints": [
+                "Worked on a client-facing application with 7,000 active users.",
+                "Redesigned a document upload page, which has previously had almost 80,000 documents uploaded yearly."
+            ],
+            "logo": "",
+            "type": "programming"
+        },
+        {
+            "company": "Cornell University Intramural Sports",
+            "position": "Student Supervisor",
+            "startMonth": 2,
+            "startYear": 2021,
+            "endMonth": 5,
+            "endYear": 2022,
+            "location": "Ithaca, NY",
+            "bulletPoints": [
+                "Supervised in-person recreation and intramural sports.",
+                "Evaluated, trained, and supervised student officials.",
+                "Filled out paperwork and administered first aid if needed."
+            ],
+            "logo": "",
+            "type": "general"
+        },
+        {
+            "company": "Google",
+            "position": "Software Engineering Intern",
+            "startMonth": 5,
+            "startYear": 2022,
+            "endMonth": 8,
+            "endYear": 2022,
+            "location": "Mountain View, CA",
+            "bulletPoints": [
+                "Worked on Google Maps JavaScript API team.",
+                "Implemented and tested new features for keyboard and single-pointer drag and drop.",
+                "Helped the API meet new WCAG 2.0 standards.",
+                "Designed solutions for drag and drop interactions and new feature discoverability.",
+                "Presented completed project and new solutions."
+            ],
+            "logo": "",
+            "type": "programming"
+        },
+        {
+            "company": "Cornell University Intramural Sports",
+            "position": "Student Coordinator",
+            "startMonth": 8,
+            "startYear": 2022,
+            "endMonth": 5,
+            "endYear": 2023,
+            "location": "Ithaca, NY",
+            "bulletPoints": [
+                "Acted as a line of communication between Director of Intramural Sports and other employees.",
+                "Lead student supervisors and officials on game nights."
+            ],
+            "logo": "",
+            "type": "general"
+        },
+        {
+            "company": "Cornell Fitness Centers",
+            "position": "Fitness Monitor",
+            "startMonth": 4,
+            "startYear": 2021,
+            "endMonth": 12,
+            "endYear": 2021,
+            "location": "Ithaca, NY",
+            "bulletPoints": [
+                "Monitored activities at Cornell Fitness Centers."
+            ],
+            "logo": "",
+            "type": "general"
+        },
+        {
+            "company": "Cornell Engineering Learning Initiatives",
+            "position": "Tutor",
+            "startMonth": 2,
+            "startYear": 2021,
+            "endMonth": 12,
+            "endYear": 2021,
+            "location": "Ithaca, NY",
+            "bulletPoints": [
+                "Tutored students in multivariable calculus and physics."
+            ],
+            "logo": "",
+            "type": "general"
+        }
+    ]
+}

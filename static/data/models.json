@@ -1,0 +1,29 @@
+{
+    "education": {
+        "school": "",
+        "college": "",
+        "degree": "",
+        "startMonth": 0,
+        "startYear": 0,
+        "endMonth": 0,
+        "endYear": 0,
+        "major": "",
+        "location": "",
+        "gpa": 0,
+        "relevantCourses": [],
+        "logo": "",
+        "type": ""
+    },
+    "work": {
+        "company": "",
+        "position": "",
+        "startMonth": 0,
+        "startYear": 0,
+        "endMonth": 0,
+        "endYear": 0,
+        "location": "",
+        "bulletPoints": [],
+        "logo": "",
+        "type": ""
+    }
+}
