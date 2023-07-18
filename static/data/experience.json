@@ -28,7 +28,8 @@
                 "Introduction to Cryptography", 
                 "Human Perception: Application to Computer Graphics and Visual Display"
             ],
-            "type": "Undergraduate"
+            "type": "Undergraduate",
+            "logo": "CornellUniversity.png"
         }
     ],
     "work": [
@@ -43,7 +44,7 @@
             "bulletPoints": [
                 "Officiated students playing intramural basketball."
             ],
-            "logo": "",
+            "logo": "CornellFitnessCenters.png",
             "type": "general"
         },
         {
@@ -60,7 +61,7 @@
                 "Tracked progress with Jira.",
                 "Created a read-only tech role for the production environment, allowing tech users ot access it."
             ],
-            "logo": "",
+            "logo": "MorganStanley.png",
             "type": "programming"
         },
         {
@@ -75,7 +76,7 @@
                 "Rejoined same team from Summer 2020.",
                 "Fixed bugs and added updates to the application, including a daily email update for users including application data."
             ],
-            "logo": "",
+            "logo": "MorganStanley.png",
             "type": "programming"
         },
         {
@@ -90,7 +91,7 @@
                 "Worked on a client-facing application with 7,000 active users.",
                 "Redesigned a document upload page, which has previously had almost 80,000 documents uploaded yearly."
             ],
-            "logo": "",
+            "logo": "MorganStanley.png",
             "type": "programming"
         },
         {
@@ -106,7 +107,7 @@
                 "Evaluated, trained, and supervised student officials.",
                 "Filled out paperwork and administered first aid if needed."
             ],
-            "logo": "",
+            "logo": "CornellFitnessCenters.png",
             "type": "general"
         },
         {
@@ -124,7 +125,7 @@
                 "Designed solutions for drag and drop interactions and new feature discoverability.",
                 "Presented completed project and new solutions."
             ],
-            "logo": "",
+            "logo": "Google.png",
             "type": "programming"
         },
         {
@@ -139,7 +140,7 @@
                 "Acted as a line of communication between Director of Intramural Sports and other employees.",
                 "Lead student supervisors and officials on game nights."
             ],
-            "logo": "",
+            "logo": "CornellFitnessCenters.png",
             "type": "general"
         },
         {
@@ -153,7 +154,7 @@
             "bulletPoints": [
                 "Monitored activities at Cornell Fitness Centers."
             ],
-            "logo": "",
+            "logo": "CornellFitnessCenters.png",
             "type": "general"
         },
         {
@@ -167,7 +168,7 @@
             "bulletPoints": [
                 "Tutored students in multivariable calculus and physics."
             ],
-            "logo": "",
+            "logo": "CornellEngineeringLearningInitiatives.svg",
             "type": "general"
         }
     ]

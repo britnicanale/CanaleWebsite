@@ -20,12 +20,13 @@ const MONTHS = ['January',
                 'October', 
                 'November', 
                 'December'];
+const FONT_HEIGHT = 19.5;
 
 function initColors() {
     fetch('/static/data/company-colors.json')
         .then((response) => response.json())
         .then((json) => {
-            colors = json
+            colors = json;
         });
 }
 
@@ -62,33 +63,90 @@ function showGeneralExperience(){
     }
 }
 
+function addDates(earliestMonth, earliestYear) {
+    let date = new Date();
+    let datesCol = document.createElement('div');
+    datesCol.classList.add('col-auto');
+    let month = date.getMonth();
+    let year = date.getFullYear();
+
+    let dateSpan = document.createElement('div');
+    dateSpan.innerHTML = MONTHS[month] + ' ' + year;
+    dateSpan.style.fontSize = 'small';
+    dateSpan.style.textAlign = 'right';
+    datesCol.appendChild(dateSpan);
+
+    floorMonth = Math.floor(month / 3) * 3; 
+    newMonth = floorMonth == month ? (month + 9) % 12 : floorMonth;
+    year = newMonth > month ? year - 1 : year;
+    month = newMonth;
+
+    while (year > earliestYear || 
+        (year == earliestYear && month > earliestMonth)) {
+        dateSpan = document.createElement('div');
+        dateSpan.innerHTML = MONTHS[month] + ' ' + year;
+        dateSpan.style.fontSize = 'small';
+        dateSpan.style.textAlign = 'right';
+        dateSpan.style.paddingTop = PIXELS_PER_YEAR / 4 - FONT_HEIGHT;
+        datesCol.appendChild(dateSpan);
+
+        newMonth = (month + 9) % 12;
+        year = newMonth > month ? year - 1 : year;
+        month = newMonth;
+    }
+
+    dateSpan = document.createElement('div');
+    dateSpan.innerHTML = MONTHS[earliestMonth - 1] + ' ' + earliestYear;
+    dateSpan.style.fontSize = 'small';
+    dateSpan.style.textAlign = 'right';
+    let monthDifference = month + 4 - earliestMonth;
+    dateSpan.style.paddingTop = monthDifference * PIXELS_PER_YEAR / 12 - FONT_HEIGHT;
+    datesCol.appendChild(dateSpan);
+
+    timeCol.appendChild(datesCol);
+}
+
 function putExperiencesInOrder(experiences) {
     let date = new Date();
-    let numTimelines = 0;
     while (experiences.length > 0) {
         let stackedExperienceCol = document.createElement('div');
         stackedExperienceCol.classList.add('col-auto');
         stackedExperienceCol.style['padding'] = 2;
         // Add timeline divs based on current date.
-        let latestMonth = date.getMonth();
+        let latestMonth = date.getMonth() + 1;
         let latestYear = date.getFullYear();
         // Job get the job that ends the latest that is earlier then the date given.
         let latestJobBefore = latestDateEarlierThan(experiences, latestMonth, latestYear)
         // Check that latestJobBefore is not NaN
         while (latestJobBefore === latestJobBefore) {
             let expDiv = document.createElement('div');
+
             // Difference between end of current job and reference date.
             let endDiff = (latestYear - latestJobBefore.endYear) + 
                 (latestMonth - latestJobBefore.endMonth) / 12;
             expDiv.style.marginTop = endDiff * PIXELS_PER_YEAR + 2;
+            if (latestMonth == date.getMonth() + 1 && latestYear == date.getFullYear()) 
+                expDiv.style.marginTop = endDiff * PIXELS_PER_YEAR + 2 + FONT_HEIGHT / 2;
+
             // Duration of current job.
             let duration = (latestJobBefore.endYear - latestJobBefore.startYear) + 
                 (latestJobBefore.endMonth - latestJobBefore.startMonth) / 12;
             expDiv.style.height = duration * PIXELS_PER_YEAR - 2;
+
             expDiv.style.backgroundColor = latestJobBefore.company ? colors[latestJobBefore.company] : colors[latestJobBefore.school];
             expDiv.style.background = latestJobBefore.company ? colors[latestJobBefore.company] : colors[latestJobBefore.school];
             expDiv.style.borderRadius = '' + TIMELINE_WIDTH / 2 + 'px';
             expDiv.style.width = TIMELINE_WIDTH;
+            expDiv.style.textAlign = 'center';
+
+            let logoAddress = latestJobBefore.logo;
+            let logo = document.createElement('img');
+            logo.style.width = TIMELINE_WIDTH - 5;
+            logo.style.padding = 2.5
+            logo.style.paddingTop = TIMELINE_WIDTH / 4;
+            logo.src = '/static/' + logoAddress;
+            expDiv.appendChild(logo);
+
             // Update reference date to the start of the current job.
             latestMonth = latestJobBefore.startMonth;
             latestYear = latestJobBefore.startYear;
@@ -140,9 +198,6 @@ function createExperienceTime(exp) {
     let edDiv = document.createElement('div');
     edDiv.style.backgroundColor = 'black';
     edDiv.style.width = '25px'
-    let duration = (exp.endYear - exp.startYear) + 
-        (exp.endMonth - exp.startMonth) / 12;
-    edDiv.style.height = duration * 400;
     let endDiff = (year - exp.endYear) + 
         (month - exp.endMonth) / 12;
     edDiv.style['margin-top'] = endDiff * 400
@@ -164,10 +219,7 @@ function createTimeline() {
             let month = date.getMonth();
             let year = date.getFullYear();
 
-            let careerDuration = (year - earliestStartingJob.startYear) + 
-                (month - earliestStartingJob.startMonth) / 12;
-
-            timeCol.style.height = careerDuration * 400
+            addDates(earliestStartingJob.startMonth, earliestStartingJob.startYear);
 
             putExperiencesInOrder(education)
             putExperiencesInOrder(work);
