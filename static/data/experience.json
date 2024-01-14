@@ -9,6 +9,7 @@
             "endMonth": 5,
             "endYear": 2023,
             "major": "Computer Science",
+            "isPresent": false,
             "location": "Ithaca, NY",
             "gpa": 3.5,
             "relevantCourses": [
@@ -33,6 +34,23 @@
         }
     ],
     "work": [
+
+        {
+            "company": "Google",
+            "position": "Software Engineer",
+            "startMonth": 8,
+            "startYear": 2023,
+            "endMonth": 1,
+            "endYear": 2024,
+            "isPresent": true,
+            "location": "Mountain View, CA",
+            "bulletPoints": [
+                "Work on Delve team within Geo Sustainability.",
+                "Implement features and fix bugs to improve user experience."
+            ],
+            "logo": "Google.png",
+            "type": "programming"
+        },
         {
             "company": "Cornell University Intramural Sports",
             "position": "Student Official",
@@ -40,6 +58,7 @@
             "startYear": 2019,
             "endMonth": 3,
             "endYear": 2020,
+            "isPresent": false,
             "location": "Ithaca, NY",
             "bulletPoints": [
                 "Officiated students playing intramural basketball."
@@ -54,6 +73,7 @@
             "startYear": 2020,
             "endMonth": 8,
             "endYear": 2020,
+            "isPresent": false,
             "location": "New York, NY",
             "bulletPoints": [
                 "Worked on an Agile software development team on an application with over 400 users in over 10 countries.",
@@ -71,6 +91,7 @@
             "startYear": 2020,
             "endMonth": 12,
             "endYear": 2020,
+            "isPresent": false,
             "location": "New York, NY",
             "bulletPoints": [
                 "Rejoined same team from Summer 2020.",
@@ -86,6 +107,7 @@
             "startYear": 2021,
             "endMonth": 8,
             "endYear": 2021,
+            "isPresent": false,
             "location": "New York, NY",
             "bulletPoints": [
                 "Worked on a client-facing application with 7,000 active users.",
@@ -101,6 +123,7 @@
             "startYear": 2021,
             "endMonth": 5,
             "endYear": 2022,
+            "isPresent": false,
             "location": "Ithaca, NY",
             "bulletPoints": [
                 "Supervised in-person recreation and intramural sports.",
@@ -117,6 +140,7 @@
             "startYear": 2022,
             "endMonth": 8,
             "endYear": 2022,
+            "isPresent": false,
             "location": "Mountain View, CA",
             "bulletPoints": [
                 "Worked on Google Maps JavaScript API team.",
@@ -135,6 +159,7 @@
             "startYear": 2022,
             "endMonth": 5,
             "endYear": 2023,
+            "isPresent": false,
             "location": "Ithaca, NY",
             "bulletPoints": [
                 "Acted as a line of communication between Director of Intramural Sports and other employees.",
@@ -150,6 +175,7 @@
             "startYear": 2021,
             "endMonth": 12,
             "endYear": 2021,
+            "isPresent": false,
             "location": "Ithaca, NY",
             "bulletPoints": [
                 "Monitored activities at Cornell Fitness Centers."
@@ -164,6 +190,7 @@
             "startYear": 2021,
             "endMonth": 12,
             "endYear": 2021,
+            "isPresent": false,
             "location": "Ithaca, NY",
             "bulletPoints": [
                 "Tutored students in multivariable calculus and physics."

@@ -311,8 +311,9 @@ function addExperiences() {
                 dates.classList.add('experience-text');
                 dates.innerHTML = MONTHS[experience.startMonth - 1] + ' ' + 
                     experience.startYear + ' - ' +
-                    MONTHS[experience.endMonth - 1] + ' ' + 
-                    experience.endYear;
+                    (experience.isPresent ?
+                    ' Present' :
+                    MONTHS[experience.endMonth - 1] + ' ' + experience.endYear);
                 experienceCol.appendChild(dates);
 
                 let location = document.createElement('h6');
@@ -365,7 +366,7 @@ function initExperience() {
     initColors();
 
     addExperiences();
-    createTimeline();
+    // createTimeline();
 }
 
 initExperience()
